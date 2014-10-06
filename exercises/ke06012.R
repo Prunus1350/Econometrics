@@ -1,0 +1,12 @@
+data1 <- read.table("ke0601.csv",header = TRUE, sep =",")
+data1
+plot(data1$lnX, data1$lnY,xlab="lnX",ylab="lnY",main="•s‹Ïˆê•ªU‚Ìœ‹‚P")
+fm2 <- lm(lnY ~ lnX, data = data1)
+summary(fm2)
+abline(fm2)
+bptest(fm2)
+plot(data1$XL, data1$YL,xlab="XL",ylab="YL",main="•s‹Ïˆê•ªU‚Ìœ‹‚Q")
+fm3 <- lm(YL ~ XL, data = data1)
+summary(fm3)
+abline(fm3)
+bptest(fm3)
