@@ -3,4 +3,4 @@ data1
 fm <- lm(Y ~ ., data = data1)
 summary(fm)
 slm1 <- step(fm)
-summary(slm1) @
+summary(slm1) ã€€

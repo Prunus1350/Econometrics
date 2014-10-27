@@ -1,6 +1,6 @@
 data1 <- read.table("kq0301.csv",header = TRUE, sep =",")
 data1
-plot(data1$X, data1$Y,xlab="電話回線数",ylab="テレビ台数",main="電話回線数とテレビ台数")
+plot(data1$X, data1$Y,xlab="髮ｻ隧ｱ蝗樒ｷ壽焚",ylab="繝�繝ｬ繝灘床謨ｰ",main="髮ｻ隧ｱ蝗樒ｷ壽焚縺ｨ繝�繝ｬ繝灘床謨ｰ")
 fm <- lm(Y ~ X, data = data1)
 abline(fm)
 summary(fm)

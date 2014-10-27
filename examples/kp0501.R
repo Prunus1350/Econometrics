@@ -1,7 +1,8 @@
-data1 <- read.table("k0501.csv",header = TRUE, sep =",")
+data1 <- read.table("examples//k0501.csv",header = TRUE, sep =",")
 data1
-plot(data1$X, data1$Y,xlab="X",ylab="Y",main="©ŒÈ‘ŠŠÖ‚È‚µ")
+plot(data1$X, data1$Y,xlab="X",ylab="Y",main="è‡ªå·±ç›¸é–¢ãªã—")
 fm1 <- lm(Y ~ X, data = data1)
 summary(fm1)
 abline(fm1)
+library(lmtest)
 dwtest(fm1)

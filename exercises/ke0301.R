@@ -1,6 +1,6 @@
 data1 <- read.table("ke0301.csv",header = TRUE, sep =",")
 data1
-plot(data1$Y, data1$C,xlab="Š“¾",ylab="Á”ï",main="Á”ïŠÖ”")
+plot(data1$Y, data1$C,xlab="æ‰€å¾—",ylab="æ¶ˆè²»",main="æ¶ˆè²»é–¢æ•°")
 fm <- lm(C ~ Y, data = data1)
 abline(fm)
 summary(fm)
